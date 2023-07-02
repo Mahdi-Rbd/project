@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="checkpoint.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" href="IMG_3567.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Docplanner Group</title>
+    <link rel="icon" type="image/x-icon" href="IMG_3567.png">
+  </head>
+
+  <body>
+    <!-- header -->
+    <header>
+      <div class="header-title">
+        <img id="logo" src="IMG_3567.png" alt="logo" />
+        <h1 class="header-title-text">Docplanner <span>Group</span></h1>
+      </div>
+      <div class="navbar">
+        <ul type="none">
+          <li><a href="checkpoint.html" id="selected">About us</a></li>
+          <li><a href="" id="unselected"></a></li>
+          <li>
+            <div class="dropdown">
+              <button id="dropdown-button">learn js</button>
+              <div class="dropdown-content">
+                <a href="ex10/interface_utilisateur.html">calcul des moyennes</a>
+                <a href="ex11/notes.html">calcul moyenne dans les trimestres</a>
+                <a href="ex12/jeux.html"> turn lights on and off</a>
+                <a href="ex13/index.html">Generate a password using ur info</a>
+                <a href="ex14/age calculator.html">age calculator</a>
+                <a href="ex15/page.html">Tri des personnes par les age</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- main  -->
+    <main>
+      <!-- 1ere div  -->
+      <div class="main-first">
+        <img src="logo.png" alt="logo" id="main-first-image" />
+        <h1>Making the healthcare experience more human</h1>
+      </div>
+
+      <!-- 2eme div  -->
+      <div class="main-second">
+        <p>
+          We want patients to find the perfect doctor and book an appointment in
+          the most easy way. The patient journey should be enjoyable, and that's
+          why we are always next to them: to help them find the best possible
+          care. Anytime, anywhere.
+        </p>
+        <p>
+          We also help doctors to better manage their practice and build their
+          online reputation. With our integrated end-to-end solution, doctors
+          are able not only to improve their online presence, but also to devote
+          their time to what really matters: their patients.
+        </p>
+      </div>
+
+      <!-- 3eme div  -->
+      <div class="main-third">
+        <div class="patients">
+          <div class="patients-1">
+            <img src="téléchargement.jpg" alt="mentor logo" id="patients-image" />
+            <h3>For young coders</h3>
+            <p>
+              Find a Mentor, book a visit and solve any code-related doubt
+            </p>
+          </div>
+          <div class="mentors-2">
+            <select class="patient-country">
+              <option id="">Choose a Mentor</option>
+              <option id="attribut1"><a href="#">mariem neit addi</a></option>
+              <option id="attribut2"><a href="#">salma sghair</a></option>
+              <option id="attribut3"><a href="#">ahmed mazigh</a></option>
+              <option id="attribut4"><a href="#">mahdi raboudi</a></option>
+              <option id="attribut5"><a href="#">wissem zitouni</a></option>
+            </select>
+          </div>
+        </div>
+
+        <div class="doctors">
+          <div class="doctors-1">
+            <img src="gomycode.jpg" alt="hackerspace logo" id="doctors-image" />
+            <h3>For hackerspaces</h3>
+            <p>Save time managing visits and cut no-shows by half</p>
+          </div>
+          <div class="doctors-2">
+            <select class="country-doctor">
+              <option id="attribut">Choose a hackerspace</option>
+              
+              <option id="attribut"><a href="https://gomycode.com/el-menzah-hackerspace/">El Manzah</a></option>
+              <option id="attribut"><a href="https://gomycode.com/sousse-hackerspace/">Sousse</a></option>
+              <option id="attribut"><a href="https://gomycode.com/sfax-hackerspace/">Sfax</a></option>
+              <option id="attribut"><a href="https://gomycode.com/tunis-downtown-hackerspace/">Tunis Downtown</a></option>
+              <option id="attribut"><a href="https://gomycode.com/nabeul-hackerspace/">Nabeul</a></option>
+              <option id="attribut"><a href="https://gomycode.com/gabes-hackerspace/">Gabes</a></option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="card" id="button">
+        <button>click to see the info </button>
+      </div>
+      <div class="card hidden" id="info">
+        <h1>mahdi </h1>
+        <p> age :17 </p>
+    </div>
+      <script src="java.js"></script>
+    </main>
+  </body>
+</html>

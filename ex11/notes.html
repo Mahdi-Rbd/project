@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <center>
+    <div id="div1">
+    <label for="ne1">Numero d'eleve</label>
+    <input type="text" name="numero d'eleve" id="ne1">
+    <br>
+    <label for="f">Matieres</label>
+    <select id="f" required>
+    <option value="">choisir une matiere</option>
+    <option value="algorithmique et programmation">algorithmique et programmation</option>
+    <option value="Base de donnee">Base de donnee</option>
+    <option value="Technologie de l'informatiqueet de la communication">Technologie de l'informatiqueet de la communication</option>
+    </select>
+    <br>
+    <label for="la">Note du dc</label>
+    <input type="text" name="numero d'eleve" id="DC">
+    <br>
+    <label for="la">note du synthese</label>
+    <input type="text" name="numero d'eleve" id="DS">
+    <br>
+    <input type="radio" name="tremestre 1" id="tr1">
+    <label for="la">tremestre1</label>
+    <input type="radio" name="tremestre 2" id="tr2">
+    <label for="la">tremestre2</label>
+    <br>
+    <input type="reset" value="reset">
+    <input type="button" value="calculer"id="calc">
+    </div>
+    <div id="div2">
+
+    </div>
+    var note1=document.getElementById("DC").value;
+var div2=document.getElementById("div2");
+var div1=document.getElementById("div1");
+var note2=document.getElementById("DS").value;
+function verif()
+{
+    ident=document.getElementById("ne1").value;
+    if (ident.length!=8){
+        alert("donner un numero d'eleve de 8 chiffres")
+    }
+    else if ((0>note1) || (note1>20)){
+        alert("retaper la note de controle")}
+    else if ((0>note2) || (note2>20)){
+        alert("retaper la note de synthese")
+    }
+}        
+        
+        
+
+function moyenne() <br>
+{ <br>
+var moy=(Number(note1)+(Number(note2)*2))/3; <br>
+var moy=moy.toFixed(2);<br>
+var b1=document.getElementById("tr1") <br>
+var b2=document.getElementById("tr2") <br>
+var chx="" <br>
+if (b1.Checked){ <br>
+    chx=b1.value <br>
+} <br>
+else if(b2.Checked){ <br>
+    chx=b2.value <br>
+} <br>
+var s=document.getElementById("f").value; <br>
+var ch="Votre moyenne en "+s+" du "+chx+": "+moy <br>
+return ch <br>
+} <br>
+var B=document.getElementById("calc");<br>
+B.addEventListener("click",affichage);<br>
+function affichage(){ <br>
+    ch=moyenne();<br>
+    div1.style.display = "none";<br>
+    div2.innerHTML=ch;<br>
+} <br>
+    <script src="code.js"> </script>
+    </center>
+  </body>
+</html>

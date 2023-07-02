@@ -1,0 +1,408 @@
+body {
+  font-weight: 400;
+  font-family: Roboto, Arial, sans-serif;
+  color: #747474;
+  
+  -webkit-font-smoothing: antialiased;
+}
+
+/* header  */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.664);
+  position: sticky;
+  padding-top: 10px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.header-title {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+}
+
+#logo {
+  width: 32px;
+  height: 32px;
+}
+
+h1 span {
+  color: #acacac;
+}
+
+.header-title-text {
+  color: #00c3a4;
+  font-size: 30px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  column-gap: 40px;
+}
+
+#selected {
+  text-decoration: none;
+  color: #00c3a4;
+}
+
+#unselected {
+  text-decoration: none;
+  color: #acacac;
+}
+
+#unselected:hover {
+  text-decoration: none;
+  color: #00c3a4;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+#dropdown-button:hover {
+  border: 0;
+  background-color: transparent;
+  color: #00c3a4;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  column-gap: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding-top: 10px;
+}
+
+#dropdown-button {
+  border: 0;
+  background-color: transparent;
+  color: #acacac;
+}
+
+.dropdown-content a {
+  text-decoration: none;
+  color: #acacac;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 16px;
+}
+
+.dropdown-content a:hover {
+  text-decoration: none;
+  color: #00c3a4;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/* main */
+main {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+ /* 1er main  */
+.main-first {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    align-items: center;
+    margin-top: 40px;
+    padding-top: 10px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+#main-first-image {
+width: 40px;
+height: 40px;
+}
+
+.main-first h1 {
+    color: #00c3a4;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+/* 2eme main  */
+.main-second {
+ display: flex;  
+ flex-direction: row;
+ column-gap: 40px;
+ padding-top: 10px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.main-second p {
+  font-weight: 400;
+  font-family: Roboto, Arial, sans-serif;
+  color: #747474;
+  font-size: 16px;
+  line-height: 25px;
+
+}
+
+/* 3eme */
+.main-third {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 20px;
+    padding-top: 10px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.patients, .clinics, .doctors {
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    color: white;
+    width: 400px;
+    height: 350px;
+    padding: 20px;
+}
+
+.patients, .doctors {
+    row-gap: 50px;
+}
+
+.clinics {
+    row-gap: 30px;
+}
+
+.patients h3, .clinics h3, .doctors h3 {
+    font-weight: 400;
+}
+
+.patients p, .clinics p, .doctors p {
+    font-weight: 300;
+    font-size: 26px;
+}
+
+.patients {
+    background-color: #02C8B1;
+    border: #02C8B1 1px;
+}
+
+#patients-image {
+    width: 40px;
+    height: 40px;
+}
+
+#country {
+    border: 0;
+    background-color: #02C8B1;
+    color: white;
+    text-decoration: underline;
+}
+
+.doctors {
+    background-color: #3E83E0;
+    border: #3E83E0 1px;
+}
+
+#doctors-image {
+    width: 30px;
+    height: 40px;
+}
+
+.clinics {
+    background-color: #1B2735;
+    border: #1B2735 1px;
+}
+
+#clinics-image {
+    width: 35px;
+    height: 40px;
+}
+
+.clinics-2 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.patient-country {
+    background-color: #02C8B1;
+}
+
+#attribut {
+    background-color: whitesmoke;
+    color: grey;
+}
+
+.country-doctor {
+    background-color:#3E83E0;
+
+}
+
+.specialty {
+    background-color:#1B2735 ;
+}
+
+.specialty, .country-doctor, .patient-country {
+    color: white;
+    border: 0;
+    text-decoration: underline;
+    font-size: 21px;
+}
+
+/* 4eme main  */
+.main-forth {
+    display: flex;
+    flex-direction: row;
+    column-gap: 100px;
+    padding-top: 10px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.text  {
+    color: #00c3a4;
+    font-weight: 100;
+    font-size: 28px;
+    line-height: 35px ;
+    width: 320px;
+}
+
+.icons ul {
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+    flex-wrap: wrap;
+    row-gap: 40px;
+}
+
+.icon-list li {
+    display: flex;
+    flex-direction: row;
+    column-gap: 3px;
+} 
+
+.icon-list li a {
+  text-decoration: none;
+  color: #acacac;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.icon-list li a:hover {
+    color:#00c3a4;
+}
+
+#logo-icon {
+    width: 22px;
+    height: 22px;
+    filter:  grayscale(100%);
+}
+
+li:hover #logo-icon, li:hover #logo-link, li:hover #logo-link-2, li:hover #logo-link-3,  li:hover #logo-link-4 {
+    filter: none;
+}
+
+#logo-link {
+    width: 130px;
+    height: 20px;
+    filter:  grayscale(100%);
+}
+
+#logo-link-2 {
+    width: 50px;
+    height: 35px;
+    filter:  grayscale(100%);
+}
+
+#logo-link-3 {
+    width: 70px;
+    height: 40px;
+    filter:  grayscale(100%);
+}
+
+#logo-link-4 {
+    width: 100px;
+    height: 30px;
+    filter:  grayscale(100%);
+}
+
+/* 5eme main  */
+.main-fifth {
+    background-color: #D8F6F6;
+    padding-top: 50px;
+    display: flex;
+}
+
+.main-fifth-first {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+.pads h1, .cards h3 {
+    color: #00c3a4;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 200;
+}
+
+.pads p {
+    color:grey ;
+}
+
+.pads {
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+#logo-main-5 {
+    width: 450px;
+}
+
+.main-fifth-second {
+
+}
+
+.card {
+    background-color: white;
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+}
+
+
+.card {
+  width:200px;
+  height:200px;
+  position:relative;
+  top:0;
+  left:0;
+  }
+  
+  #button {
+  z-index:1;
+  }
+  
+  #info {
+  z-index:2;
+  }
+  
+  .hidden {
+  opacity:0;
+  }

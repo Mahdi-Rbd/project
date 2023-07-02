@@ -1,0 +1,9 @@
+#b{
+    margin-left: 150px;
+}
+tr,td{
+    border:2px black solid;
+}
+table{
+    border-collapse: collapse;
+}
