@@ -387,22 +387,31 @@ li:hover #logo-icon, li:hover #logo-link, li:hover #logo-link-2, li:hover #logo-
 }
 
 
-.card {
-  width:200px;
-  height:200px;
-  position:relative;
-  top:0;
-  left:0;
-  }
-  
-  #button {
-  z-index:1;
-  }
-  
-  #info {
-  z-index:2;
-  }
-  
-  .hidden {
-  opacity:0;
-  }
+.card-2 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 1000px;
+  bottom: 0;
+  left: 200px;
+  border: 1px solid;
+}
+
+#info {
+  z-index: 1;
+  background-color: #00c3a4;
+}
+
+#first {
+  z-index: 2;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}

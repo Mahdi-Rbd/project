@@ -6,8 +6,10 @@ w=document.getElementById("attribut5")
 function select() {
     
 }
-let back = document.getElementById ("first");
-let front = document.getElementById ("info");
-back.addEventListener("click", () => { 
-    front.classList.remove("hidden");
+let first = document.getElementById("first");
+let info = document.getElementById("info");
+
+first.addEventListener("click", () => {
+  info.classList.remove("hidden");
+  first.classList.add("hidden");
 });
