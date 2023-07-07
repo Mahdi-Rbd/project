@@ -2,6 +2,8 @@ var note1=document.getElementById("DC").value;
 var div2=document.getElementById("div2");
 var div1=document.getElementById("div1");
 var note2=document.getElementById("DS").value;
+var b1=document.getElementById("tr1");
+var b2=document.getElementById("tr2");
 function verif()
 {
     ident=document.getElementById("ne1").value;
@@ -19,15 +21,13 @@ function verif()
 
 function moyenne()
 {
-var moy=(Number(note1)+(Number(note2)*2))/3;
-var moy=moy.toFixed(2);
-var b1=document.getElementById("tr1")
-var b2=document.getElementById("tr2")
-var chx=""
+moy=(Number(note1)+(Number(note2)*2))/3;
+moy=moy.toFixed(2);
+chx=""
 if (b1.Checked){
     chx=b1.value
 }
-else if(b2.Checked){
+if(b2.Checked){
     chx=b2.value
 }
 var s=document.getElementById("f").value;

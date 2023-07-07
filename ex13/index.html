@@ -17,6 +17,40 @@
     <label for="pw">Password</label>
     <input type="text" name="pw" id="PW" disabled>
     </center>
+    np=document.getElementById("NP") <br>
+cin=document.getElementById("CIN") <br>
+function verif() { <br>
+    ch=np.value <br>
+    i=0 <br>
+    test=true <br>
+    do { <br>
+        test=("A"<=ch[i].toUpperCase())||(ch[i].toUpperCase()<="Z") <br>
+        i=i+1  <br> 
+    } while ((test==true)||(i!=ch.length));  <br>
+    c=0<br>
+    for (let i = 0; i < ch.length; i++) {<br>
+        if (ch[i]==" "){<br>
+            c=c+1<br>
+        }<br>
+    }<br>
+    if ((test==false) || (c!=1)) {<br>
+         alert("verifier nom et prenom")<br>
+        } <br> 
+}<br>
+function verifier() {<br>
+    Ch=cin.value<br>
+    test=true<br>
+    if (Ch.length!=8) {<br>
+        alert("redonner le cin")<br>
+    }<br>
+    test=isNaN(Ch)<br>
+    if (test=false){<br>
+        alert("le cin doit etre un numero")<br>
+    }<br>
+}<br>
+cin.addEventListener("change",verifier) <br>
+<br>
+<a href="/checkpoint.html">back</a>
     <script src="java.js"> </script>
 </body>
 </html>

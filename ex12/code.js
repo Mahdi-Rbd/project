@@ -18,5 +18,3 @@ function turnoff()
     img.src="l1.png"
     z.style.color="black"
 }
-A+
-B+
